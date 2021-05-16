@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodRecipeCell" customModule="eSpaceIVTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="138"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="138"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOx-R8-34Q">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="138"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QLG-P6-81N">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="83"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Xxq-B7-93d">
+                                <rect key="frame" x="10" y="88" width="107" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Hgj-Qt-deg">
+                                <rect key="frame" x="10" y="117" width="112" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faK-QA-Pib">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="138"/>
+                                <connections>
+                                    <action selector="cellBtnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yHO-wE-kxi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xxq-B7-93d" firstAttribute="leading" secondItem="wOx-R8-34Q" secondAttribute="leading" constant="10" id="3hQ-Ga-1AJ"/>
+                            <constraint firstItem="Xxq-B7-93d" firstAttribute="centerX" secondItem="wOx-R8-34Q" secondAttribute="centerX" id="4YZ-5k-MDE"/>
+                            <constraint firstItem="QLG-P6-81N" firstAttribute="height" secondItem="wOx-R8-34Q" secondAttribute="height" multiplier="0.6" id="7OF-wp-186"/>
+                            <constraint firstAttribute="trailing" secondItem="Hgj-Qt-deg" secondAttribute="trailing" constant="5" id="8j8-bh-s6I"/>
+                            <constraint firstItem="faK-QA-Pib" firstAttribute="top" secondItem="wOx-R8-34Q" secondAttribute="top" id="Bzc-nG-ps4"/>
+                            <constraint firstAttribute="trailing" secondItem="QLG-P6-81N" secondAttribute="trailing" id="FVr-wr-Kow"/>
+                            <constraint firstItem="QLG-P6-81N" firstAttribute="top" secondItem="wOx-R8-34Q" secondAttribute="top" id="Fiu-3i-dG1"/>
+                            <constraint firstItem="Xxq-B7-93d" firstAttribute="top" secondItem="QLG-P6-81N" secondAttribute="bottom" constant="5" id="GMc-M0-I4F"/>
+                            <constraint firstItem="Hgj-Qt-deg" firstAttribute="leading" secondItem="wOx-R8-34Q" secondAttribute="leading" constant="10" id="Kic-Nu-6Cs"/>
+                            <constraint firstAttribute="trailing" secondItem="faK-QA-Pib" secondAttribute="trailing" id="Lbh-XZ-fY3"/>
+                            <constraint firstItem="QLG-P6-81N" firstAttribute="leading" secondItem="wOx-R8-34Q" secondAttribute="leading" id="Zu5-TV-HPl"/>
+                            <constraint firstItem="faK-QA-Pib" firstAttribute="leading" secondItem="wOx-R8-34Q" secondAttribute="leading" id="f60-8V-gCB"/>
+                            <constraint firstAttribute="trailing" secondItem="Xxq-B7-93d" secondAttribute="trailing" constant="10" id="fW3-mx-1OA"/>
+                            <constraint firstAttribute="bottom" secondItem="Hgj-Qt-deg" secondAttribute="bottom" constant="5" id="ibs-it-xrh"/>
+                            <constraint firstAttribute="bottom" secondItem="faK-QA-Pib" secondAttribute="bottom" id="mWF-ES-tAL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="wOx-R8-34Q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2GL-Nh-VgI"/>
+                <constraint firstAttribute="bottom" secondItem="wOx-R8-34Q" secondAttribute="bottom" id="KQs-64-Jpp"/>
+                <constraint firstItem="wOx-R8-34Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PXq-6B-IcN"/>
+                <constraint firstAttribute="trailing" secondItem="wOx-R8-34Q" secondAttribute="trailing" id="c8h-lm-mQX"/>
+            </constraints>
+            <size key="customSize" width="127" height="138"/>
+            <connections>
+                <outlet property="foodRecipeImage" destination="QLG-P6-81N" id="qRu-8D-80g"/>
+                <outlet property="foodRecipePublishedName" destination="Hgj-Qt-deg" id="qta-rj-RW0"/>
+                <outlet property="foodRecipeTitle" destination="Xxq-B7-93d" id="c1C-pa-HHJ"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="121.20535714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
